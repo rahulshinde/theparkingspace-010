@@ -1,0 +1,84 @@
+:root{
+	--primary:  #000000;
+	--secondary:  #AF6EF9;
+}
+
+body.section_1 .listen:after{
+  display: block; 
+}
+body.section_2 .read:after{
+  display: block; 
+}
+body.section_3 .artists:after{
+  display: block; 
+}
+
+#listen{
+	text-align: center;
+}
+
+#read{
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.print_download_container{
+  display: flex;
+  width: auto;
+  margin: 0 var(--outer_margin);
+}
+
+#print_download{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#print_download img{
+  height: 5rem;
+  margin-bottom: -1.5rem;
+}
+
+#illustration1{
+  width: 4%;
+  top: 50%;
+  right: 15%;
+}
+
+#illustration2{
+  right: 5%;
+  bottom: 55%;
+  width: 7%;
+}
+
+@media (max-width: 1000px), (hover: none){
+  #illustration1{
+    width: 20%;
+    top: auto;
+    bottom: 10rem;
+    right: auto;
+    left: 5rem;
+  }
+
+  #illustration2{
+    top: auto;
+    right: 2rem;
+    bottom: 2rem;
+    width: 30%;
+  }
+}
+
+@media (max-width: 767px), (hover: none) and (max-width: 767px){
+  #illustration1{
+    bottom: -4rem;
+    
+  }
+
+  #illustration2{
+    bottom: 10rem;
+    right: 18%;
+  }
+}
