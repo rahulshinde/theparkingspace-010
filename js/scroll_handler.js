@@ -19,6 +19,11 @@ function setup(){
 
   window.addEventListener('scroll', scrollHandler);
   window.addEventListener('resize', calculateSectionPositions);
+  document.querySelector('.page_title').addEventListener('click', scrollToTop);
+}
+
+function scrollToTop(){
+   window.scrollTo(0, 0);
 }
 
 
@@ -28,10 +33,10 @@ function scrollHandler(){
   console.log(listen_top - window_height * 0.5);
   if (scroll_position <= about_top - window_height * 0.5 && current_position != 1){
     setSection(1);
-  } else if (scroll_position > about_top - window_height * 0.5 && scroll_position <= survey_top - window_height * 0.5 && current_position != 2 ){
+  } else if (scroll_position > about_top - window_height * 0.5 && scroll_position < survey_top - window_height * 0.5 && current_position != 2 ){
     setSection(2)
   } else if (scroll_position > survey_top - window_height * 0.5 && current_position != 3 ){
-    setSection(3);
+    setSection(3)
   }
 }
 
