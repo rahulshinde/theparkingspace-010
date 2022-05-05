@@ -6,23 +6,23 @@
 body.section_1 .listen:after{
   display: block; 
 }
-body.section_2 .read:after{
+body.section_2 .about:after{
   display: block; 
 }
-body.section_3 .artists:after{
+body.section_3 .survey:after{
   display: block; 
 }
 
 #listen{
 	text-align: center;
-}
-
-#read{
-  text-align: center;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
   justify-content: center;
+}
+
+#survey{
+  text-align: center;
 }
 
 .print_download_container{

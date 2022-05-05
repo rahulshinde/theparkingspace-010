@@ -3,8 +3,8 @@ var scroll_position,
     window_height,
     current_position,
     listen_top,
-    access_top,
-    artists_top;
+    about_top,
+    survey_top;
 
 var body = document.body,
     html = document.documentElement;
@@ -26,11 +26,11 @@ function scrollHandler(){
   scroll_position = window.scrollY;
   console.log(scroll_position);
   console.log(listen_top - window_height * 0.5);
-  if (scroll_position <= access_top - window_height * 0.5 && current_position != 1){
+  if (scroll_position <= about_top - window_height * 0.5 && current_position != 1){
     setSection(1);
-  } else if (scroll_position > access_top - window_height * 0.5 && scroll_position <= artists_top - window_height * 0.5 && current_position != 2 ){
+  } else if (scroll_position > about_top - window_height * 0.5 && scroll_position <= survey_top - window_height * 0.5 && current_position != 2 ){
     setSection(2)
-  } else if (scroll_position > artists_top - window_height * 0.5 && current_position != 3 ){
+  } else if (scroll_position > survey_top - window_height * 0.5 && current_position != 3 ){
     setSection(3);
   }
 }
@@ -52,8 +52,8 @@ function calculateSectionPositions(){
                        html.clientHeight, html.scrollHeight, html.offsetHeight );
   window_height = window.innerHeight;
   listen_top = document.getElementById('listen').offsetTop;
-  access_top = document.getElementById('read').offsetTop;
-  artists_top = document.getElementById('artists').offsetTop;
+  about_top = document.getElementById('about').offsetTop;
+  survey_top = document.getElementById('survey').offsetTop;
 
   scrollHandler();
 }
