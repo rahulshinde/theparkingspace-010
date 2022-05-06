@@ -55,9 +55,16 @@
 
 .author_image svg{
   width: 2rem;
-  padding: 0 2rem 1rem 2rem;
+  padding: 0 2rem 2rem 2rem;
   fill: var(--secondary);
+  display: block;
+  margin: 0 auto;
 }
+
+.author_image button:focus-visible svg{
+    fill: var(--primary);
+  }
+
 .image_link button{
   position: relative;
   font-family: 'Roundaway Stencil';
