@@ -9,6 +9,10 @@
     border-color: var(--primary);
   }
 
+  .image_link button:hover .image_link_caption{
+    color: var(--primary);
+  }
+
   .image_link button:hover img{
     filter: invert(1);
   }
@@ -40,9 +44,18 @@
   padding-bottom: 0.5rem;
 }
 
+.image_link_caption{
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: var(--s_font);
+  color: var(--secondary);
+}
+
 .author_image svg{
   width: 2rem;
-  padding: 0 2rem;
+  padding: 0 2rem 1rem 2rem;
   fill: var(--secondary);
 }
 .image_link button{
@@ -122,7 +135,7 @@ button.close_modal:after{
 .description{
   display: flex;
   flex-direction: column;
-  font-size: var(--m_font);
+  font-size: var(--l_font);
   color: var(--secondary);
   box-sizing: border-box;
   text-align: left;
@@ -158,7 +171,7 @@ button.close_modal:after{
   display: flex;
   overflow: hidden;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
 }
 
 .image_container .image_inner_container{
