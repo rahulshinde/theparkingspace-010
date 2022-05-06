@@ -55,7 +55,7 @@
 
 .author_image svg{
   width: 2rem;
-  padding-bottom: 2rem;
+  padding: 0 2rem 2rem 2rem;
   fill: var(--secondary);
   display: block;
   margin: 0 auto;
@@ -240,6 +240,10 @@ button.close_modal:after{
     width: 100%;
     margin-right: 0;
     margin-bottom: 2rem;
+  }
+
+  .author_image svg{
+    padding: 0 0 2rem 0;
   }
 
   .description{
