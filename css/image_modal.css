@@ -225,6 +225,10 @@ button.close_modal:after{
     flex-direction: column;
   }
 
+  .author_image{
+    margin-right: 0;
+  }
+
   .image_container .image_inner_container{
     width: 100%;
     margin-right: 0;
