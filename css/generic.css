@@ -751,6 +751,14 @@ a{
     justify-content: center;
   }
 
+  .print_download_container{
+    flex-direction: column;
+  }
+
+  .print_download:nth-child(even){
+    margin-top: 2rem;
+  }
+
   .author_image{
     margin-right: 0;
   }
