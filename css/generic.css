@@ -539,7 +539,7 @@ a{
   display: inline-flex;
   width: auto;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
   border: 3px solid var(--primary);
   border-radius: 1rem;
   padding: 0.5rem;
@@ -558,6 +558,7 @@ a{
 .print_download .audio_heading{
   margin-top: 0;
   margin-left: 1rem;
+  width: auto;
   margin-bottom: 0;
 }
 
